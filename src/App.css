@@ -1,38 +1,250 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.column{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.center{
+  text-align: center;
+}
+.title{
+  /* align-items: start; */
+  text-align: start;
+  margin-left: 5rem;
+  
+}
+h1{
+  color:  #FF4434;
+  font-family: "ROG";
+  font-size: 100px;
+  margin: 4rem 0 1rem 0 ;
+}
+h6{
+  margin: 0.5rem 0 1rem 0 ;
+  font-size: 2rem;
+  font-family: 'Poppins';
+
+}
+
+/* Styles for pointstable */
+.points__table{
+
+  padding: 1rem;
+  border: 1px solid white;
+  max-width: 50rem;
+  min-width: 20rem;
+  margin: 6.5rem 0 0 5rem;
+  background-color: rgba(174, 174, 174, 0.2);
+}
+.table__heading{
+  text-align: start;
+  text-transform: capitalize;
+  font-family: 'ROG';
+  margin: 0 0 1rem 1rem;
+
+
+}
+.points__table__card{
+  padding: 0.2rem 1rem;
+  background-color:  rgba(103, 103, 103, 0.5);
+  margin: 0 0 0 1rem;
+  border-bottom: solid 1px whitesmoke;
+  /* box-shadow: 1px 1px 2px #888888; */
+}
+.points__table__card_name{
+  width: 4rem;
+  text-align: start;
+}
+.points__table__card_NRR{
+  width: 1.5rem;
+}
+.header{
+  background-color:  #FF4434;
+}
+
+/* Styles for Kohli GIFs (optional) */
+.overlay {
+  width: 25%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-40%, 0);
+  border: none;
+  outline: none;
+  position: fixed;
+  z-index: -1;
+}
+
+.gif {
+  width: 100%;
+  height: 100%;
+  border: none;
+  zoom:0.75;
+  /* transform: translate(25%, 0); */
+}
+
+.container_body{   
+  /*Nothing, just jugaad */
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 1rem;
+  /* align-items: end; */
+
+}
+
+
+/* Styles for upcoming Matches list */
+.matches-container{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid white;
+  margin: 10px;
+  max-height: 40rem; 
+  overflow-y: scroll; 
+  margin-right: 3rem;
+  background-color: rgba(174, 174, 174, 0.2);
+
+}
+.right{
+  flex-grow: 1;
+}
+.match-card{
+  margin: 0.2rem 0.5rem;
+  padding: 0.4rem 0.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 25rem;
+  border: 1px solid white;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+.match-header{
+  margin: 0 1rem ;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid white;
+  justify-content: space-between;
+}
+.match-body{
+  margin: 1rem 0;
+}
+button{
+  padding: 0.7rem;
+  outline: none;
+  width: 8rem;
+  margin: 0 0.5rem;
+  border-radius: 0.3rem;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(202, 202, 202, 0.2);
   color: white;
+  font-size: 1.1rem;
+}
+/* Class for button which is selected */
+.selected{
+  color: white;
+  background-color: #FF4434;     
 }
 
-.App-link {
-  color: #61dafb;
+.test123{
+  margin-top: 95rem;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Responsive shit */
+@media screen and (max-width: 1300px) {
+  .overlay {
+    visibility: none;
+    top: -50rem;
+    left: 0;
+    position: absolute;
+    color: transparent;
   }
-  to {
-    transform: rotate(360deg);
+  .points__table{
+    /* position: fixed; */
+    padding: 1rem;
+    border: 1px solid white;
+    /* width: 18rem; */
+    
+  }
+}
+@media screen and (max-width: 1000px) {
+  .points__table{
+    padding: 1rem;
+    border: 1px solid white;
+    margin: 0 4rem 1rem 4rem;
+    background-color: rgba(174, 174, 174, 0.2);
+  }
+  h1{
+    margin:  0;
+  }
+  .container_body{
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-between;
+  }
+  .matches-container{
+
+    margin: 10px;
+
+  
+  }
+}
+@media screen and (max-width: 580px) {
+  .points__table{
+    padding: 1rem;
+    border: 1px solid white;
+    margin: 1rem;
+  }
+  .test123{
+    margin-top: 85rem;
+  }
+  .match-card{
+    justify-content: space-between;
+    margin: 0.3rem 0.3rem;
+    width: 19rem;
+  }
+  button{
+    padding: 0.5rem;
+    outline: none;
+    width: 6rem;
+    margin: 0 0.4rem;
+    border-radius: 0.3rem;
+    border: none;
+    cursor: pointer;
+    background-color: #191c24;
+    color: white;
+    font-size: 1.1rem;
+  }
+}
+
+/* Animation, please do something here */
+/* .points {
+  transition: all 0.1s ease-in-out;
+} */
+/* .points (class for match-card) becomes .animated when a change occurs */
+.animated {
+  animation: points-animation 0.1s ease-in-out;
+  background-color: rgba(174, 174, 174, 0.7);
+}
+
+@keyframes points-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.001);
+  }
+  100% {
+    transform: scale(1);
   }
 }

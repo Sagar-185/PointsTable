@@ -1,0 +1,85 @@
+{
+    "teams": [
+      {
+        "name": "MI",
+        "Matches" : 12,
+        "points":14,
+        "wins": 6,
+        "NR" :0,
+        "NRR" : -0.12
+      },
+      {
+        "name": "CSK",
+        "Matches" : 12,
+        "points": 15,
+        "wins": 7,
+        "NR" :1,
+        "NRR" : 0.5
+      },
+      {
+        "name": "RCB",
+        "Matches" : 11,
+        "points": 10,
+        "wins": 5,
+        "NR" :0,
+        "NRR" : -0.35
+      },
+      {
+        "name": "GT",
+        "Matches" : 12,
+        "points": 16,
+        "wins": 8,
+        "NR" :0,
+        "NRR" : 0.76
+      },
+      {
+        "name": "RR",
+        "Matches" : 12,
+        "points": 12,
+        "wins": 6,
+        "NR" :0,
+        "NRR" : 0.63
+      },
+      {
+        "name": "PBKS",
+        "Matches" : 12,
+        "points": 12,
+        "wins": 6,
+        "NR" :0,
+        "NRR" : -0.27
+      },
+      {
+        "name": "DC",
+        "Matches" : 12,
+        "points": 8,
+        "wins": 4,
+        "NR" :0,
+        "NRR" : -0.69
+      },
+      {
+        "name": "SRH",
+        "Matches" : 11,
+        "points": 8,
+        "wins": 4,
+        "NR" :0,
+        "NRR" : -0.47
+      },
+      {
+        "name": "KKR",
+        "Matches" : 12,
+        "points": 10,
+        "wins": 5,
+        "NR" :0,
+        "NRR" : -0.35
+      },
+      {
+        "name": "LSG",
+        "Matches" : 12,
+        "points": 13,
+        "wins": 6,
+        "NR" :1,
+        "NRR" : 0.31
+      }
+    ]
+  }
+  
