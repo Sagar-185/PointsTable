@@ -154,7 +154,7 @@ button{
 }
 
 .test123{
-  margin-top: 85rem;
+  margin-top: 65rem;
   align-items: center;
   text-align: center;
   display: flex;
@@ -206,7 +206,7 @@ button{
     margin: 1rem;
   }
   .test123{
-    margin-top: 85rem;
+    margin-top: 65rem;
   }
   .match-card{
     justify-content: space-between;
