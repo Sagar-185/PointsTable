@@ -1,46 +1,6 @@
 {
     "matches": [
       {
-        "home": "RR",
-        "away": "RCB",
-        "homeW" : false,
-        "checked" : false,
-        "draw" : false,
-        "awayW" : false,
-        "date" : "May 14, 2023",
-        "time" : "7PM IST"
-      },
-      {
-        "home": "CSK",
-        "away": "KKR",
-        "homeW" : false,
-        "checked" : false,
-        "draw" : false,
-        "awayW" : false,
-        "date" : "May 14, 2023",
-        "time" : "7PM IST"
-      },
-      {
-        "home": "GT",
-        "away": "SRH",
-        "homeW" : false,
-        "checked" : false,
-        "draw" : false,
-        "awayW" : false,
-        "date" : "May 15, 2023",
-        "time" : "7PM IST"
-      },
-      {
-        "home": "LSG",
-        "away": "MI",
-        "homeW" : false,
-        "checked" : false,
-        "draw" : false,
-        "awayW" : false,
-        "date" : "May 16, 2023",
-        "time" : "7PM IST"
-      },
-      {
         "home": "PBKS",
         "away": "DC",
         "homeW" : false,
